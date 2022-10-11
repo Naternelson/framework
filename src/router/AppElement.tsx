@@ -2,11 +2,10 @@ import { ReactElement, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 /** A Simple DEV wrapper to log the name and description of an Element */
-export function AppElement(props:{element: ReactElement| React.ReactNode | JSX.Element, name: string, description?: string,}){
+export function AppElement(props:{element: ReactElement| React.ReactNode | JSX.Element, name: string, description?: string, log?: boolean}){
     useEffect(() => {
         if(process.env.NODE_ENV === "development" || !process.env.NODE_ENV) {
-            console.log(props)
-            if(props.name || props.description) {
+            if((props.name || props.description) && props.log) {
                 console.groupCollapsed(props.name)
                 console.log({description: props.description}) 
                 console.groupEnd()

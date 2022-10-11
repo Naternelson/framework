@@ -8,6 +8,7 @@ import { LoginPage } from "../pages/login"
 import { PlaygroundPage } from "../pages/playground"
 import { PrivacyPage } from "../pages/privacy"
 import { RootPage } from "../pages/root"
+import { SignupPage } from "../pages/signup"
 import { SiteMap } from "../pages/sitemap"
 import { TermsOfServicePage } from "../pages/terms-of-service"
 import { AppElement, ProtectedElement } from "./AppElement"
@@ -111,7 +112,7 @@ export class AppRouter{
             name: "SIGNUP",
             path: "/signup",
             description: description || "A Page with a signup form",
-            element: element || <LoginPage/>
+            element: element || <SignupPage/>
         }))
     }
     addSitemap(element?: RouteProps["element"], description?:string){

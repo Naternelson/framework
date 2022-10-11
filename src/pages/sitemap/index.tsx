@@ -3,7 +3,7 @@ import { AppRouter } from "../../router/AppRoutes";
 
 export const SiteMap = (props: AppRouter) => {
     return (
-        <div style={{display: "flex", justifyContent: "center", flexDirection: "column", margin:"auto 3rem"}}>
+        <div className="page">
             <h1>Insert SITEMAP here</h1>
             <ul>
                 {props.defaultRoots.map(route => {
