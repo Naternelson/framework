@@ -1,0 +1,8 @@
+@keyframes animate-gradient {
+    from {
+        background-position: right;
+    }
+    to {
+        background-position: left;
+    }
+}

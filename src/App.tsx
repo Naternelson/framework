@@ -1,11 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { useAppRoutes } from './router';
-import { BrowserRouter } from 'react-router-dom';
+import AppRouterService from './2.0/router';
+import { useEffect } from 'react';
 
 function App() {
-  return useAppRoutes()
+  useEffect(()=>{
+    console.log("YOP")
+  })
+  return <AppRouterService/>
 }
 
 export default App;

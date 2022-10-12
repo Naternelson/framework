@@ -1,0 +1,32 @@
+:root {
+    --footer-height: 5rem
+}
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+main .content {
+    padding-bottom:var(--footer-height);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height);
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+footer a {
+    padding: 1rem 2rem;
+    font-size: small;
+}
+footer .disclaimer{
+    width: "100%";
+    padding: .4rem;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
